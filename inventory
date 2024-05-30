@@ -12,4 +12,9 @@
 web
 catalogue
 cart
-
+[localhost:vars]
+course="devops from inventory"
+trainer="sivakumar"
+duration="110hrs"
+[localhost]
+localhost
