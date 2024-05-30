@@ -1,11 +1,13 @@
 - name: Play-1
   hosts: local host
+  become: yes
   tasks:
   - name: Task -1
     ansible.builtin.debug:
       msg: "hello from Play-1 and Task-1"
 - name: Play-2
   hosts: local host
+  become: yes
   tasks:
   - name: Task -2
     ansible.builtin.debug:
