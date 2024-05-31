@@ -1,0 +1,30 @@
+- name: variables from play level
+  hosts: localhost
+  become: yes
+  vars:
+    trainee: "siri from play"
+    trainer: "Ravi from play"
+    manager: "Coss from play"
+#######################################################
+  vars_files:
+    - variables.yaml
+#######################################################
+  vars_prompt:
+  - name: trainee
+    prompt: enter your trainee name
+    private: false
+  - name: trainer
+    prompt: enter your trainer name
+    private: false
+  - name: manager
+    prompt: enter your manager name
+    private: true
+########################################################
+  tasks:
+  - name: checking variables
+    vars: # task level variables
+      trainee: "siri from task"
+      trainer: "Ravi from task"
+      manager: "Coss from task"     
+    ansible.builtin.debug:
+      msg: " I am trainer {{trainer}}, my trainee is {{trainee}} and our manager is {{manager}}"

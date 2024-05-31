@@ -16,5 +16,8 @@ cart
 course="devops from inventory"
 trainer="sivakumar"
 duration="110hrs"
+trainee="siri from inventory"
+trainer="Ravi from inventory"
+manager="Coss from inventory"
 [localhost]
 localhost
