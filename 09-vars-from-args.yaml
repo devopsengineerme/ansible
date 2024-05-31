@@ -1,0 +1,7 @@
+- name: variables from command prompt
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: checking variables from command prompt
+      ansible.builtin.debug:
+        msg: " hi {{person}} i am wishing you {{wish}}"

@@ -1,7 +1,7 @@
-- name: variables from inven Tanya
+- name: variables from inventory
   hosts: localhost
   become: yes
   tasks:
   - name: check variables
     ansible.builtin.debug:
-      msg: "I am learning {{course}} and my tainer is {{trainer}} and the duration is {{duration}}"
+      msg: "I am learning {{course}} and my tainer is {{trainer}} and the duratimhon is {{duration}}"
