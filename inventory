@@ -1,7 +1,7 @@
 172.31.24.34
 172.31.24.30
 [web]
-3.93.187.61
+50.17.99.206
 [catalogue]
 172.31.24.10
 172.31.24.12
@@ -16,3 +16,5 @@ cart
 course="devops from inventory"
 trainer="sivakumar"
 duration="110hrs"
+[localhost]
+localhost

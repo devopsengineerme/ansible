@@ -1,4 +1,4 @@
-- name: variables from play level
+- name: variables from inven Tanya
   hosts: localhost
   become: yes
   tasks:
