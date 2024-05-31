@@ -14,7 +14,6 @@ catalogue
 cart
 [localhost:vars]
 course="devops from inventory"
-trainer="sivakumar"
 duration="110hrs"
 trainee="siri from inventory"
 trainer="Ravi from inventory"
