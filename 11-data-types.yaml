@@ -1,0 +1,29 @@
+- name: checking data types
+  hosts: localhost
+  become: yes
+  vars:
+    Name: siri # key value type data types
+    skills: # list type data types
+      - linux
+      - shell script
+      - ansible
+      - terraform
+    experience: # map type data types
+      linux: 7
+      shellscript: 10
+      ansible: 12
+    trainer: true #boolean type data types
+  tasks:
+    - name: print key value type
+      ansible.builtin.debug:
+        msg: "key value type data type is {{Name}}"
+    - name: print list type data types
+      ansible.builtin.debug:
+        msg: "list type data types are {{skills}}"
+    - name: print map type data types
+      ansible.builtin.debug:
+        msg: " map type data types are {{experience}}"
+    - name: print boolean type data type
+      ansible.builtin.debug:
+         msg: " boolean type data type is {{trainer}}"
+         
