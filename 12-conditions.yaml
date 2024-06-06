@@ -7,6 +7,6 @@
       register: user # it will store  the output in the user variable
       ignore_errors: yes
     - name: printing output
-      ansible.builtin debug:
+      ansible.builtin.debug:
         msg: "{{user}}"
       
