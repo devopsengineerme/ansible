@@ -8,5 +8,5 @@
       ignore_errors: yes
     - name: printing output
       ansible.builtin.debug:
-        msg: "{{user}}"
+        msg: " user output is {{user}}"
       
