@@ -4,7 +4,9 @@
   tasks:
     - name: checking the user
       ansible.builtin.command: id roboshop
-        register: user # it will store  the output in the user variable
-        ignore_errors: yes
+      register: user # it will store  the output in the user variable
+      ignore_errors: yes
+    - name: printing output
+      ansible.builtin debug:
         msg: "{{user}}"
       
