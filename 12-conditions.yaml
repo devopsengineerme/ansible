@@ -1,5 +1,5 @@
 - name: checking the roboshop user existed or not
-  hosts: local host
+  hosts: localhost
   become: yes
   tasks:
     - name: checking the user
