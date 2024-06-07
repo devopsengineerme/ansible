@@ -1,10 +1,11 @@
-- name: checking the loop values
-  become: yes
+- name: loops
   hosts: localhost
+  become: yes
+  tasks:
   - name: printing user names in loop
     ansible.builtin.debug:
       msg: "hi Good morning {{user}}"
-    loop:
+    loops:
       - ravi
       - sam
       - raju
