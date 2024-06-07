@@ -4,8 +4,8 @@
   tasks:
   - name: printing user names in loop
     ansible.builtin.debug:
-      msg: "hi Good morning {{user}}"
-    loops:
+      msg: "hi Good morning {{item}}"
+    loop:
       - ravi
       - sam
       - raju
