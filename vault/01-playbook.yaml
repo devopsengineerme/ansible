@@ -1,0 +1,9 @@
+- name: web
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: print the message
+      ansible.builtin.debug:
+        msg: "hi I am siri"
+  - name: ping the server
+      ansible.builtin.ping:
